@@ -13,9 +13,16 @@
 		9F0AB69C29F6A9DB0030B4B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0AB69A29F6A9DB0030B4B6 /* Main.storyboard */; };
 		9F0AB69E29F6A9DD0030B4B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0AB69D29F6A9DD0030B4B6 /* Assets.xcassets */; };
 		9F0AB6A129F6A9DD0030B4B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0AB69F29F6A9DD0030B4B6 /* LaunchScreen.storyboard */; };
+		9F0AB6A929F6AAD40030B4B6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AB6A829F6AAD40030B4B6 /* Product.swift */; };
+		9F0AB6AB29F6AB000030B4B6 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AB6AA29F6AB000030B4B6 /* ProductCell.swift */; };
+		9F0AB6D529F9547F0030B4B6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AB6D429F9547F0030B4B6 /* Network.swift */; };
+		DF170A99E374319ACA76759F /* Pods_DZ43.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA7EF7E2E8837C2E26C83DC /* Pods_DZ43.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EA7EF7E2E8837C2E26C83DC /* Pods_DZ43.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZ43.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		665ECD9BE3C9813FBF30DDB3 /* Pods-DZ43.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZ43.debug.xcconfig"; path = "Target Support Files/Pods-DZ43/Pods-DZ43.debug.xcconfig"; sourceTree = "<group>"; };
+		936BDE6CEDF69859342832DC /* Pods-DZ43.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZ43.release.xcconfig"; path = "Target Support Files/Pods-DZ43/Pods-DZ43.release.xcconfig"; sourceTree = "<group>"; };
 		9F0AB69129F6A9DB0030B4B6 /* DZ43.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZ43.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0AB69429F6A9DB0030B4B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F0AB69629F6A9DB0030B4B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		9F0AB69D29F6A9DD0030B4B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F0AB6A029F6A9DD0030B4B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F0AB6A229F6A9DD0030B4B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F0AB6A829F6AAD40030B4B6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9F0AB6AA29F6AB000030B4B6 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		9F0AB6D429F9547F0030B4B6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF170A99E374319ACA76759F /* Pods_DZ43.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A9D54577954B78FE61C7944 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EA7EF7E2E8837C2E26C83DC /* Pods_DZ43.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88AA6FF039192B806D5F34C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				665ECD9BE3C9813FBF30DDB3 /* Pods-DZ43.debug.xcconfig */,
+				936BDE6CEDF69859342832DC /* Pods-DZ43.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9F0AB68829F6A9DB0030B4B6 = {
 			isa = PBXGroup;
 			children = (
 				9F0AB69329F6A9DB0030B4B6 /* DZ43 */,
 				9F0AB69229F6A9DB0030B4B6 /* Products */,
+				88AA6FF039192B806D5F34C0 /* Pods */,
+				1A9D54577954B78FE61C7944 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +93,9 @@
 				9F0AB69D29F6A9DD0030B4B6 /* Assets.xcassets */,
 				9F0AB69F29F6A9DD0030B4B6 /* LaunchScreen.storyboard */,
 				9F0AB6A229F6A9DD0030B4B6 /* Info.plist */,
+				9F0AB6A829F6AAD40030B4B6 /* Product.swift */,
+				9F0AB6AA29F6AB000030B4B6 /* ProductCell.swift */,
+				9F0AB6D429F9547F0030B4B6 /* Network.swift */,
 			);
 			path = DZ43;
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F0AB6A529F6A9DD0030B4B6 /* Build configuration list for PBXNativeTarget "DZ43" */;
 			buildPhases = (
+				8B3525DEE3D5BE766930FF26 /* [CP] Check Pods Manifest.lock */,
 				9F0AB68D29F6A9DB0030B4B6 /* Sources */,
 				9F0AB68E29F6A9DB0030B4B6 /* Frameworks */,
 				9F0AB68F29F6A9DB0030B4B6 /* Resources */,
+				B7B3D1612E2F6F00595CF1EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B3525DEE3D5BE766930FF26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DZ43-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B3D1612E2F6F00595CF1EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DZ43/Pods-DZ43-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DZ43/Pods-DZ43-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DZ43/Pods-DZ43-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F0AB68D29F6A9DB0030B4B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F0AB69929F6A9DB0030B4B6 /* ViewController.swift in Sources */,
+				9F0AB6A929F6AAD40030B4B6 /* Product.swift in Sources */,
+				9F0AB6D529F9547F0030B4B6 /* Network.swift in Sources */,
+				9F0AB6AB29F6AB000030B4B6 /* ProductCell.swift in Sources */,
 				9F0AB69529F6A9DB0030B4B6 /* AppDelegate.swift in Sources */,
 				9F0AB69729F6A9DB0030B4B6 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +362,7 @@
 		};
 		9F0AB6A629F6A9DD0030B4B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 665ECD9BE3C9813FBF30DDB3 /* Pods-DZ43.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +373,6 @@
 				INFOPLIST_FILE = DZ43/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +390,7 @@
 		};
 		9F0AB6A729F6A9DD0030B4B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936BDE6CEDF69859342832DC /* Pods-DZ43.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +401,6 @@
 				INFOPLIST_FILE = DZ43/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
